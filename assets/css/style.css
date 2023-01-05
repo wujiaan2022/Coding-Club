@@ -25,6 +25,10 @@ h1, h2 {
 }
 /* navigation links */
 
+.active {
+    border-bottom:1px solid #3a3a3a;
+}
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -45,14 +49,12 @@ h1, h2 {
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a
 }
-.active {
-    border-bottom:1px solid #3a3a3a;
-}
 
 .container {
     display: flex;
     align-items: center;
     float: left;
+    position: relative;
 }
 img {
     max-width:100%;
@@ -63,6 +65,7 @@ img {
     margin: 0 100px;   
     font-size: 200%; 
 }
+
 h2 {
     letter-spacing: 5px;
     padding: 5px;
@@ -74,13 +77,23 @@ p, li, form {
     color:green;
 }
 
+.text > h2 
+{
+font-size: 3vw;
+}
+
+.text > p 
+{
+font-size: 3vw;
+}
+
 .text-center {
     float: left;
     width: 100%
 }
  #about-us {
     width:inherit;
-    height:430px;
+    height:550px;
     background-color:#E5FFE3FF ;      
  }
  #about-us-heading > h2 {    
@@ -92,16 +105,34 @@ p, li, form {
  }
   #about-us-offer {
     margin-top: 20px;
-    margin-left:530px;
+    
     line-height:30px;
  }
+
+ table
+{ 
+    margin-left: auto;
+    margin-right: auto;
+}
+ #about-us-offer > ul { 
+	width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	}
+#about-us-offer > p {
+    width: 400px; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
 
  th, td {
     padding:3px 25px 3px 25px;
 }
 table {
     border-collapse: collapse;
-  }
+    margin-left: auto;
+    margin-right: auto;
+}
   
   tr {
     border-bottom: 1pt solid black;
@@ -113,10 +144,12 @@ table {
     letter-spacing: 3px;
     font-size: 110%;
     margin-top: 10px;
-    margin-left:610px;
  }
 
- 
+ form {
+    display:table;/* shrinks to fit content */
+    margin:auto;
+}
   .form-section {
     clear: left;    
     height: 400px;
@@ -136,7 +169,6 @@ table {
 }
 .signup-form {      
     max-width: 300px;
-    margin-left:610px;
     padding: 20px 5px;    
 }
 label {
@@ -206,4 +238,15 @@ hr {
     margin: 0 1%;
     padding:0 3%;
     color: #3a3a3a
+}
+
+/* media queries */
+
+/* For large to medium screen size from 1200px and down */
+@media screen and (max-width: 800px) {
+    
+    .container img {
+        width:100%
+           }
+         
 }
