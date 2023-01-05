@@ -69,6 +69,13 @@ h2 {
 }
 p {
     letter-spacing: 3px;
+    font-size: 110%;
+    font-weight: bold;
+}
+li {
+    letter-spacing: 3px;
+    font-size: 110%;
+    font-weight: bold;
 }
 .text-center {
     float: left;
@@ -76,26 +83,43 @@ p {
 }
  #about-us {
     width:inherit;
-    height:300px;
+    height:430px;
     background-color:#E5FFE3FF ;      
  }
  #about-us-heading > h2 {    
     text-align: center;
+    padding:20px 0 0;
  }
  #about-us-heading > p {
     text-align: center;
  }
   #about-us-offer {
-    margin-top: 10px;
-    margin-left:630px;
-    line-height:20px;
- }
-  #about-us-table {
-    margin-top: 10px;
-    margin-left:700px;
+    margin-top: 20px;
+    margin-left:530px;
+    line-height:30px;
  }
 
- input {
+ th, td {
+    padding:3px 25px 3px 25px;
+}
+table {
+    border-collapse: collapse;
+  }
+  
+  tr {
+    border-bottom: 1pt solid black;
+  }
+  #row1 {
+    border-bottom: 1.5pt solid black;
+  }
+  #about-us-table {
+    letter-spacing: 3px;
+    font-size: 110%;
+    margin-top: 10px;
+    margin-left:610px;
+ }
+
+  input {
     border: 2px solid rgb(139, 131, 131);
     border-radius: 4px;
   }
@@ -146,6 +170,9 @@ hr {
     line-height: 20px;
     text-align: center;
     margin-top: 20px;
+}
+#contact-us-heading > p {
+    letter-spacing: 5px;
 }
 
 .social-networks {
