@@ -85,16 +85,20 @@
         </div>
     
         <section class="form-section">
-            <form method="post" action="https://formdump.codeinstitute.net/">
-                <h2>signed up!</h2>
-                <p>10 classes for €40</p>
+            <h2>signed up!</h2>
+            <p>10 classes for €40</p>
+            <form class="signup-form" id="sign-up" method="post" action="https://formdump.codeinstitute.net/">                
                 <label for="cname">Child's Name</label>
                 <input type="text" id="cname" name="child_name" required>
+                <hr>
                 <label for="pname">Parent/Guardian's Name</label>
                 <input type="text" id="pname" name="parent/guardian_name" required>
+                <hr>
                 <label for="email">Contact Email</label>
                 <input type="email" id="email" name="contact_email" required>
-                <input type="submit" value="Submit">
+                <div id="submit">
+                    <input type="submit" value="Submit">
+                </div>                
             </form>
         </section>         
          
