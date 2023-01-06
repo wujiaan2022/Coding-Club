@@ -8,7 +8,7 @@
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color:#3a3a3a;
+    color:green;
 }
 /* headings and logos */
 
@@ -204,9 +204,7 @@ hr {
 #submit-hr {
     margin:15px;
 }
-.social-networks {
-    margin: 50px;
-}
+
 
 #contact-us {
     clear: left;    
@@ -228,18 +226,30 @@ hr {
     letter-spacing: 5px;
 }
 
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 46px; 
+    background: #6cf;
+    
+ }
+
 .social-networks {
     text-align: center;
+    margin-top: 12px;
 }
 .social-networks > li {
     display: inline;
 }
 .social-networks i {
-    font-size: 160%;
-    margin: 0 1%;
-    padding:0 3%;
-    color: #3a3a3a
+    font-size: 120%;   
+    padding:0 4%; 
+    color: #3a3a3a;
 }
+
+
 
 /* media queries */
 
