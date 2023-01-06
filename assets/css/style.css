@@ -10,6 +10,13 @@ body{
     font-weight: 300;
     color:green;
 }
+p, li, form {
+    letter-spacing: 3px;
+    font-size: 110%;
+    font-weight: bold;
+    color:green;
+}
+
 /* headings and logos */
 
 h1, h2 {
@@ -17,20 +24,16 @@ h1, h2 {
     text-transform: uppercase;  
     color: green;  
 }
-
 #logo {
     float:left;
     font-size: 280%;
     margin-left: 30px;
 }
-/* navigation links */
 
-.active {
-    border-bottom:1px solid #3a3a3a;
-}
+/* menu */
 
 #menu {
-    font-size: 10px;
+    font-size: 20px;
 }
 #menu, #logo {
     line-height:75px;
@@ -40,6 +43,7 @@ h1, h2 {
     float: right;
     list-style-type: none;
     margin-right: 30px;
+    letter-spacing: 4px;
 }
 #menu a {
     text-decoration: none;
@@ -48,6 +52,8 @@ h1, h2 {
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a
 }
+
+/* image and welcome text */
 
 .container {
     display: flex;
@@ -58,33 +64,25 @@ h1, h2 {
 img {
     max-width:100%;
 }
-
 .text {
     text-align: center;
     margin: 0 auto;   
     font-size: 200%; 
 }
-
 h2 {
     letter-spacing: 5px;
     padding: 5px;
 }
-p, li, form {
-    letter-spacing: 3px;
-    font-size: 110%;
-    font-weight: bold;
-    color:green;
-}
-
 .text > h2 
 {
 font-size: 3vw;
 }
-
 .text > p 
 {
 font-size: 3vw;
 }
+
+/* about us section*/
 
 .text-center {
     float: left;
@@ -106,7 +104,6 @@ font-size: 3vw;
     margin-top: 20px;    
     line-height:30px;
  }
-
  table
 { 
     margin-left: auto;
@@ -131,24 +128,25 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
-  
-  tr {
+tr {
     border-bottom: 1pt solid black;
   }
-  #row1 {
-    border-bottom: 1.5pt solid black;
+#row1 {
+border-bottom: 1.5pt solid black;
   }
-  #about-us-table {
+#about-us-table {
     letter-spacing: 3px;
     font-size: 110%;
     margin-top: 10px;
  }
 
- form {
+/* sign up form section */
+
+form {
     display:table;/* shrinks to fit content */
     margin:auto;
 }
-  .form-section {
+.form-section {
     clear: left;    
     height: 400px;
     width: inherit;
@@ -171,17 +169,15 @@ label {
     display: flex;
     justify-content: center;
 }
-
 .text-input {
     width: 300px;
     height: 30px;
  }
-
  input{
     display: block;
    margin: 0 auto;
  }
-  input[type=submit] {
+input[type=submit] {
     width: 120px;
     height: 60px;
     border-radius: 50%;
@@ -191,7 +187,6 @@ label {
     display: block;
     margin: 0 auto;
   }
-
 hr {
     margin:2px;
 }
@@ -199,6 +194,7 @@ hr {
     margin:15px;
 }
 
+/* contact section*/
 
 #contact-us {
     clear: left;    
@@ -220,6 +216,7 @@ hr {
     letter-spacing: 5px;
 }
 
+/* footer media links section */
 
 footer {
     position: fixed;
@@ -228,7 +225,6 @@ footer {
     height: 46px; 
     background: #6cf;    
  }
-
 .social-networks {
     text-align: center;
     margin-top: 12px;
@@ -242,61 +238,60 @@ footer {
     color: #3a3a3a;
 }
 
-
-
 /* media queries */
 
-/* For medium screen size from 950px and down */
+/* For medium screen size from 700px and down */
 @media screen and (max-width: 700px) {
-        #menu {
-            font-size:8px;
-            float:right;            
-            align-items: center;
-            line-height: 10px;
-            padding-bottom: 10px;
-        }       
-        
-        #about-us-offer > p {
-            width: 300px; 
-            font-size: small;
-            text-align: center;
+    #menu {
+        clear:left;
+        font-size:12px;       
+        align-items: center;
+        line-height: 20px;
+        padding-bottom:25px;
+    } 
+    #menu > li {
+        letter-spacing: 0;
+    }      
+    
+    #about-us-offer > p {
+        width: 300px; 
+        font-size: small;
+        text-align: center;
+    }
+    #about-us-offer > ul { 
+        width: 230px; 
+        line-height: 20px;
+        font-size:x-small;
+        margin-left: auto; 
+        margin-right: auto;             
+    }
+    label {
+        display: flex;
+        justify-content: center;
+    }
+     table {
+        font-size: small;
         }
-        #about-us-offer > ul { 
-            width: 230px; 
-            line-height: 20px;
-            font-size:x-small;
-            margin-left: auto; 
-            margin-right: auto;             
+    label {
+        font-size: small;
+    }   
+     .form-section > p {
+        font-size: small;
+        text-align: center;
         }
-        label {
-            display: flex;
-            justify-content: center;
+     .form-section h2 {
+        font-size: medium;
+         text-align: center;
+         padding:20px 0 0;
         }
-            
-
-         table {
-            font-size: small;
-            }
-        label {
-            font-size: small;
-        }   
-         .form-section > p {
-            font-size: small;
-            text-align: center;
-            }
-         .form-section h2 {
-            font-size: medium;
-             text-align: center;
-             padding:20px 0 0;
-            }
-        .signup-form {      
-             max-width: 300px;
-              padding: 20px 5px;    
-            }                  
-        .text-input {
-            width: 200px;
-            height: 20px;
-            }    
-           
+    .signup-form {      
+         max-width: 300px;
+          padding: 20px 5px;    
+        }                  
+    .text-input {
+        width: 200px;
+        height: 20px;
+        }    
+       
 }
          
