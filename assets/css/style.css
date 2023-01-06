@@ -31,9 +31,7 @@ h1, h2 {
 
 #menu {
     font-size: 10px;
-    margin: 0;
-    padding: 0;
-        }
+}
 #menu, #logo {
     line-height:75px;
     color:green;
@@ -105,8 +103,7 @@ font-size: 3vw;
     text-align: center;
  }
   #about-us-offer {
-    margin-top: 20px;
-    
+    margin-top: 20px;    
     line-height:30px;
  }
 
@@ -115,7 +112,7 @@ font-size: 3vw;
     margin-left: auto;
     margin-right: auto;
 }
- #about-us-offer > ul { 
+#about-us-offer > ul { 
 	width: 400px; 
 	margin-left: auto; 
 	margin-right: auto; 
@@ -160,13 +157,11 @@ table {
 }
 .form-section > p {
     font-size: x-large;
+    text-align: center;
 }
 .form-section h2 {
     text-align: center;
     padding:20px 0 0;
-}
-.form-section p {
-    text-align: center;
 }
 .signup-form {      
     max-width: 300px;
@@ -181,13 +176,12 @@ label {
     width: 300px;
     height: 30px;
  }
-input {
-    border: 2px solid rgb(139, 131, 131);
-    border-radius: 4px;
-  }
 
+ input{
+    display: block;
+   margin: 0 auto;
+ }
   input[type=submit] {
-    border: 1px solid black;
     width: 120px;
     height: 60px;
     border-radius: 50%;
@@ -232,8 +226,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 46px; 
-    background: #6cf;
-    
+    background: #6cf;    
  }
 
 .social-networks {
@@ -256,34 +249,54 @@ footer {
 /* For medium screen size from 950px and down */
 @media screen and (max-width: 700px) {
         #menu {
-            clear:left;
-            float:left;
-            margin-left:30px;
-            margin-bottom:20px;
-            line-height: 25px;
-             }  
-        img {
-            width:100%
-        }
-        .text {
-            clear:left;
-            float:left;
-        }
+            font-size:8px;
+            float:right;            
+            align-items: center;
+            line-height: 10px;
+            padding-bottom: 10px;
+        }       
+        
         #about-us-offer > p {
             width: 300px; 
             font-size: small;
-            margin-left: auto; 
-            margin-right: auto;
+            text-align: center;
         }
         #about-us-offer > ul { 
-            width: 300px; 
+            width: 230px; 
+            line-height: 20px;
             font-size:x-small;
             margin-left: auto; 
-            margin-right: auto; 
+            margin-right: auto;             
+        }
+        label {
+            display: flex;
+            justify-content: center;
+        }
+            
+
+         table {
+            font-size: small;
             }
-            table {
-                font-size: small;
+        label {
+            font-size: small;
+        }   
+         .form-section > p {
+            font-size: small;
+            text-align: center;
             }
+         .form-section h2 {
+            font-size: medium;
+             text-align: center;
+             padding:20px 0 0;
+            }
+        .signup-form {      
+             max-width: 300px;
+              padding: 20px 5px;    
+            }                  
+        .text-input {
+            width: 200px;
+            height: 20px;
+            }    
            
 }
          
